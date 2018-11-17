@@ -1,4 +1,7 @@
 {
+  "name": "netlify-lambda-chatbot-demo",
+  "version": "0.1.0",
+  "description": "Deploy a line chatbot on netlify serverlessly",
   "dependencies": {
     "netlify-lambda": "^1.0.3"
   },
