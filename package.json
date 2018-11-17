@@ -6,8 +6,11 @@
     "netlify-lambda": "^1.0.3"
   },
   "scripts": {
+    "postinstall": "tsc",
     "start": "run-p watch start:lambda",
     "start:lambda": "netlify-lambda serve dist",
+    "build": "npm run clean && tsc && npm run build:lambda",
+    "clean": "rimraf dist",
     "build:lambda": "netlify-lambda build dist",
     "watch": "tsc --watch"
   },
